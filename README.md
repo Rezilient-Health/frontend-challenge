@@ -33,10 +33,10 @@ You will need the latest LTS version of **NodeJS** and **npm** (or **yarn**) to 
 
 To get started, please **_fork_** this repository using your own GitHub account. Feel free to name it whatever you like.
 
-Once you have forked this repository, you can clone it locally and install its dependencies from the root directory. Once the dependencies are installed you can run the application.
+Once you have forked this repository, you can clone it locally and install its dependencies (**note the** `--legacy-peer-deps` option) from the root directory. Once the dependencies are installed you can run the application.
 
 ```
-$ npm install
+$ npm install --legacy-peer-deps
 $ npm run start
 ```
 
