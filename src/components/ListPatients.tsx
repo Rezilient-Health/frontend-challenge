@@ -1,17 +1,17 @@
-import { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
-import { Box } from '@mui/material';
-
-// Uncomment to use the mock api calls.
-// import * as api from '../mocks/api';
+import React, { ReactElement, useEffect, useState } from 'react';
+import { getData } from '../data';
+import { PatientsTable } from './PatientTable';
 
 const ListPatients = (): ReactElement => {
-  return (
-    <Box>
-      <h2>[List Patient Placeholder]</h2>
-      <Link to={'/patients/1'}>[View Patients Link Example]</Link>
-    </Box>
-  );
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    getData().then((data: any) => {
+      setData(data);
+    });
+  }, []);
+
+  return <PatientsTable />;
 };
 
 export default ListPatients;
