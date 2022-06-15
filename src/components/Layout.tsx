@@ -1,17 +1,12 @@
-import { ReactElement } from 'react';
 import { Container } from '@mui/material';
+import { ReactElement } from 'react';
 
 type Props = {
   children?: JSX.Element | JSX.Element[];
 };
 
 const Layout = (props: Props): ReactElement => {
-  return (
-    <Container maxWidth="md">
-      <h1>[Layout Placeholder]</h1>
-      {props.children}
-    </Container>
-  );
+  return <Container maxWidth="lg">{props.children}</Container>;
 };
 
 export default Layout;

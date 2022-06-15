@@ -1,27 +1,9 @@
-#table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.MuiDataGrid-row.Mui-odd {
+  background-color: aliceblue;
 }
-
-#table td,
-#table th {
-  border: 1px solid rgb(189, 35, 35);
-  padding: 8px;
+.MuiDataGrid-row:nth-child(even) {
+  background-color: #bfd7ea;
 }
-
-#table tr:nth-child(even) {
-  background-color: #a84343;
-}
-
-#table tr:hover {
-  background-color: rgb(35, 38, 85);
-}
-
-#table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #04aa6d;
-  color: rgb(51, 161, 75);
+.MuiDataGrid-row {
+  cursor: pointer;
 }
