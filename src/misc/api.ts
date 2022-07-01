@@ -1,16 +1,6 @@
 // Please do not change anything in this file!
-import patients from './data.json';
-
-type Patient = {
-  id: number;
-  first_name: string;
-  last_name: string;
-  email: string;
-  sex: string;
-  active: boolean;
-  updated_at: string;
-  created_at: string;
-};
+import patients from "./data.json";
+import { Patient } from "./types";
 
 const delay = (ms: number): Promise<void> => {
   return new Promise((resolve) => setTimeout(resolve, ms));

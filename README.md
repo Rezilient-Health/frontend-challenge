@@ -33,10 +33,8 @@ You will need the latest LTS version of **NodeJS** and **npm** (or **yarn**) to 
 
 To get started, please **_fork_** this repository using your own GitHub account. Feel free to name it whatever you like.
 
-Once you have forked this repository, you can clone it locally and install its dependencies (**note the** `--legacy-peer-deps` option) from the root directory. Once the dependencies are installed you can run the application.
-
 ```
-$ npm install --legacy-peer-deps
+$ npm install
 $ npm run start
 ```
 
@@ -49,6 +47,8 @@ Once you are ready and have committed all your code to your forked repository, p
 ## Instructions
 
 For this challenge you will be building one component that gets a list of patients from an API and displays them to the user. The second will display a single patient to the user. Please follow the user stories below to come up with your solution.
+
+Also, there are **NO** tests required to complete this challenge.
 
 ##### User Stories
 
@@ -67,11 +67,13 @@ Please **_only_** add CSS to `src/App.css` for any custom styling.
 
 Please **_only_** use [Material UI](https://mui.com/) for the UI framework. It is already included as a dependency so all you need to do is import whatever you need. All Material UI documentation can be found here: https://mui.com/material-ui/
 
-Feel free to add additional libraries as you see fit.
+**DO NOT ADD** any other external libraries! We want to see how you handle displaying and filtering data without external libraries like DataGrid.
 
-##### Mock API & Data
+##### API, Types & Data
 
-We have also provided mock data and API calls. Please do not modify any code in the `src/mocks` folder. You will only need to make API calls. To do so, uncomment the import code in `ListPatients.tsx` and `ViewPatient.tsx`. Note that each call is _asynchronous_. There are two functions, `getPatients` and `getPatient`. Please see `src/mocks/api.ts` for usage.
+We have also provided mock data, mock API calls and types. Please do not modify any code in the `src/misc` folder. To make API calls, uncomment the import code in `ListPatients.tsx` and `ViewPatient.tsx`. Note that each call is _asynchronous_. There are two functions, `getPatients` and `getPatient`. Please see `src/misc/api.ts` for usage.
+
+Please also see `src/misc/types.ts` for data types.
 
 ##### Assets
 

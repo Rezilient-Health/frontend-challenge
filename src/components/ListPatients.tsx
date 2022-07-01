@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 // Uncomment to use the mock api calls.
-// import * as api from '../mocks/api';
+// import * as api from '../misc/api';
 
 const ListPatients = (): ReactElement => {
   return (
